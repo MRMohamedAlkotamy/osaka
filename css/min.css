@@ -1,0 +1,95 @@
+:root{
+    --main-color: #ff206e
+}
+
+#home{
+    background-image: url(../images/bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.text-main{
+    color:var(--main-color) !important
+}
+.nav-link:hover {
+    color: var(--main-color);
+}
+.home-content li{
+    inline-size: 45px;
+    block-size: 45px;
+    transition: all .2s;
+    cursor: pointer;
+}
+.home-content li:hover{
+    color: var(--main-color);
+    border-color: var(--main-color) !important;
+}
+#About{
+    background-image: url(../images/light_dot.jpg);
+    
+}
+/* #About h2{
+    background-color: red;
+} */
+#About h2::after{
+content: "ABOUT";
+font-size: 70px;
+position: absolute;
+inset-inline-start: 50%;
+inset-block-start: 50%;
+transform: translate(-50%,-50%);
+opacity: .2;
+}
+
+
+#services{
+    background-image: url(../images/dark_dot.jpg);
+    
+}
+/* #services h2{
+    background-color: red;
+} */
+.services-item i{
+    inline-size: 80px;
+    block-size: 80px;
+}
+#services h2::after{
+content: "SERVICES";
+font-size: 70px;
+position: absolute;
+inset-inline-start: 50%;
+inset-block-start: 50%;
+transform: translate(-50%,-50%);
+opacity: .2;
+}
+.services-item i{
+    inline-size: 80px;
+    block-size: 80px;
+}
+/* .carousel-indicators{
+    background-color: red;
+} */
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+    block-size: 70px;
+    inline-size: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+.carousel-indicators .active {
+    height: 80px;
+    width: 80px;
+}
+.carousel-indicators{
+    min-height: 80px;
+}
+.nav-pills .nav-link.active{
+    background-color: var(--main-color);
+}
+.nav-link[data--bs-target] {
+    color: var(--main-color);
+    border-radius: 30px;
+    margin: 0 5px;
+}
